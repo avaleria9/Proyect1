@@ -1,0 +1,242 @@
+.nav_links a{
+  font-family: sans-serif;
+  color:#ab4493;
+  font-weight: bold; 
+  text-decoration: none;
+justify-content: center;
+}
+
+/*alinea la lista una al lado del otro*/
+.nav_links li{
+    display: inline-block;
+    padding: 0px 90px;
+  
+}
+.nav_links{
+    list-style:none;
+    background-color:  rgb(255, 174, 201);
+   
+    
+}
+.nav_links a:hover{
+    color: rgb(252, 190, 233);
+    text-decoration: none;
+}
+body{position: relative;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+background: linear-gradient(90deg,#ffebbf ,#ffcdd2,#decdfb );
+
+}
+
+
+.footer{
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+background-color:  rgb(255, 174, 201);
+}
+.footer a{font-family: sans-serif;
+  color:#ab4493;
+  font-weight: bold; 
+  text-decoration: none;
+justify-content: center;}
+.footer a:hover{
+  color: rgb(252, 190, 233);
+  text-decoration: none;
+}
+.footer li{list-style:none ;}
+.footerabajo{
+   margin-top: auto;
+}
+
+
+.quienessomos{
+    display: flex;
+flex-direction: row;
+justify-content: space-around;
+font-family: sans-serif;
+}
+.texto{font-family: sans-serif;
+  float: center;  
+  color: #ab4493;
+  font-weight: bold;
+font-style:oblique ; }
+.persona{
+width: 200px; 
+    height: auto;
+    margin: 10px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 10px;  
+    background-image: linear-gradient(to left, rgba(255, 146, 202, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%);
+    padding-left: 30px; 
+    font-family: sans-serif;
+    float: center;  
+    color: #fff;
+    font-weight: bold; 
+}
+/*formulario de contact*/
+
+.contact_form{  
+    width: 460px; 
+    height: auto;
+    margin: 10px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: rgb(255, 174, 201);
+    padding-left: 30px; 
+    font-family: sans-serif;
+    
+   
+  
+  }
+  
+  
+  input{
+    background-color: #fbfbfb; 
+
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+ 
+  }
+  
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: center;  
+    color: #ab4493;
+    font-weight: bold; 
+    
+  }
+  
+  
+  button{
+    
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-image: linear-gradient(to left, rgba(255, 146, 202, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%);
+    border-color: #ab4493; 
+  border-style: solid; 
+    border-radius: 10px;  
+    width: 408px;   
+    cursor: pointer;
+  }
+  
+  
+  button p{
+    color: #fff; 
+    font-weight: bold; 
+  }
+    
+    button:active{transform: translatey(5px);}
+  
+/*SLIDER*/
+
+.slide{
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow:hidden;
+
+}
+.slide ul,li{box-sizing: border-box;}
+ul.slider {
+  position:relative; /*Necesitamos que el ul sea relativo*/
+}
+ul.slider li {
+  opacity: 0; /*Ocultamos todos los <li>*/
+  transition: opacity .5s;
+  position: absolute; /*Posicionamos en absoluto los <li>*/
+  left: 0px;
+  top: 0px;
+  margin:50px;
+  padding:50px;
+ 
+}
+ul.slider li:first-child {
+  opacity: 1; /*Mostramos el primer <li>*/
+}
+ul.slider li:target {
+  opacity: 1; /*Mostramos el <li> al que apunta el enlace*/
+}
+
+nav.seleccion {
+  width: 100vw;
+  position: absolute;
+  top:auto;
+  right: 0;
+  
+  left: 0;
+  background-image: linear-gradient(to left, rgba(255, 146, 202, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%);
+}
+
+nav.seleccion ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+nav.seleccion ul li {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+nav.seleccion a {
+ 
+  text-decoration: none;
+ 
+  font-family: sans-serif;
+  color: #fff; 
+  font-weight: bold; 
+  line-height: 1.8;
+  flex-grow: 1;
+  text-align: center;
+ 
+  border-right: 1px solid rgb(255, 174, 201);
+  flex-wrap: wrap;
+  position: relative;
+}
+
+nav.seleccion li:last-child a {
+  border-right: 0;
+}
+
+
+
+nav.seleccion a:active {
+ 
+  transform: translatey(5px);
+}
+ 
